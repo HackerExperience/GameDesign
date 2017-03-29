@@ -1,0 +1,68 @@
+**Hacker Experience 2**  
+
+# Game Mechanics
+
+- [[en:Hacking]]
+  - [[en:hacking:Brute-force]]
+  - [[en:hacking:Exploit]]
+- [[en:Internet]]
+  - [[en:internet:Connections]]
+  - [[en:internet:LAN]]
+  - [[en:internet:ISP]]
+  - [[en:internet:Backbones]]
+- [[en:Server]]
+  - [[en:server:Components]]
+- [[en:Software]]
+  - [[en:software:Modules]]
+  - [[en:software:Filesystem]]
+  - [[en:software:Research]]
+  - [[en:software:Firewall]]
+  - [[en:software:Encryption]]
+  - [[en:software:Spoof]]
+  - [[en:software:Compression]]
+  - [[en:software:Viruses]]
+- [[en:Processes]]
+- [[en:Logs]]
+- [[en:Map]]
+  - [[en:map:Influence]]
+  - [[en:map:heat-map|Heat map]]
+- [[en:Clan]]
+  - [[en:clan:police|Private Police]]
+- [[en:Missions]]
+  - [[en:missions:PvE]]
+  - [[en:missions:PvP]]
+- [[en:law-enforcement|Law Enforcement]]
+- [[en:Finance]]
+  - [[en:finance:Currencies]]
+  - [[en:finance:Banks]]
+  - [[en:finance:Bitcoin]]
+
+# Strategies
+
+- [[en:strategy:Offense]]
+- [[en:strategy:Defense]]
+- [[en:strategy:Stealth]]
+- [[en:strategy:Lonewolf]]
+- [[en:strategy:Team-player|Team player]]
+
+# Storyline
+
+- [[en:storyline:Overview]]
+- [[en:storyline:Proposals]]
+- [[en:storyline:Campaign]]
+  - [[en:storyline:campaign:Single-player]]
+  - [[en:storyline:campaign:Multiplayer]]
+
+# Other mechanics
+
+- [[en:Chat]]
+- [[en:Skills]]
+- [[en:Badges]]
+- [[en:University]]
+
+# Links
+
+- [Hacker Experience 2](https://hackerexperience.com)
+- [Chat](https://chatops.hackerexperience.com)
+- [Github](https://github.com/HackerExperience)
+- [Ongoing discussions](https://github.com/HackerExperience/GameDesign/issues)
