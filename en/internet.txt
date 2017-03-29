@@ -1,0 +1,3 @@
+This is a hacking game, so we use the Internet to connect to other players.
+
+[[en:internet:Connections]] are the foundation of the Internet. The Internet is also made of [[en:internet:isp-backbone|ISPs and Backbones]]. And you can have [[en:internet:lan|your own Internet]].

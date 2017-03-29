@@ -1,0 +1,5 @@
+LAN (Local Area Network) is a feature we plan to add to the game (but not on BETA). LANs can add layers of defense on top of someone's main[what is main?] computer.
+
+Suppose I have three computers on my LAN, A, B, C, with A being my main computer. I can create a "local proxy" with A as the gateway, B as the next node, and C as the exit node. Then, when I hack someone, I can add a public proxy, in which I have my local-proxy as first "node", and all other nodes I add to this proxy. Using this method, when someone "reaches" to my computer, they will hit server C, not my main server A. The attacker would have to figure out this is a LAN, and that server C is not actually my main computer.
+
+LANs can also be used to reduce the power of DDoS (botnet) attacks by adding routers and hardware firewalls in front of my servers.
