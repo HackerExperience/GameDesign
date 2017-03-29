@@ -1,0 +1,13 @@
+This is a broad topic. To narrow it down, we'll be using "hacking" as "illegal remote access to other server". Of course illegal is OK within the game ;)
+
+Currently, there are two main ways to get remote access to another server: 
+
+- [[en:hacking:brute-force|Brute-force attack]]
+- [[en:hacking:exploit|Exploit attack]]
+
+In the future we'll add more attack mechanisms.
+
+
+---
+
+[Original discussion (read-only)](https://dev.hackerexperience.com/T256)

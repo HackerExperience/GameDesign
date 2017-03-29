@@ -1,0 +1,33 @@
+# Bruteforce attack
+
+A bruteforce attack attempts to discover the password of a user within the system. Usually, this user is `root`. It uses the `Cracker` software and is mitigated through `Hasher` and `Firewall` software.
+
+### Attacking
+
+An attacker can launch a bruteforce attack by running his `Cracker` against any IP address. This will launch a (transient) process. Automatically, the attacker's access point will launch a connection of type CRC against the victim.
+
+Connections play an important role, specially because it allows us to balance the game. Basically, connections expose the attacker machines (from his gateway, to the access point to the victim).
+
+### Defending
+
+Bruteforce attacks are "lousy" in the sense that they are easily detected by the victim machine. The firewall has the ability to detect and notify the victim of an attack. Usually, this will happen almost instantly.
+
+The victim's firewall passively limits the number of concurrent attempts the Cracker can use to guess the victim's password. The victim's hasher passively increases the entropy and length of the server passwords. Both can significantly increase the time taken to discover the password.
+
+Increasing the Cracker process time is a good thing because 1) it keeps the attacker exposed for a longer time, so he must decide whether it's a good idea to crack that server and 2) gives the victim time to think & execute counter-attack measures.
+
+The victim can //actively// defend herself. She can use the active version of her firewall to further increase the time taken to complete the bruteforce attack.
+
+However, an interesting aspect of the bruteforce attack is that the victim can never be fully safe against them. She can get powerful firewall and hasher, and possibly increase the cracking time to days or weeks, also exposing her attacker. Still, the process could be completed if no action is taken. The only way to actually stop a bruteforce attack is by counter-attacking (hacking the attacker and disabling the cracker process). Also, see [1].
+
+### Duration
+
+Default version dynamics apply here. Which means that, unlike HE1, a 1.0 cracker can hack a server with 100.0 hasher and 100.0 firewall. The catch is to know whether it's a good idea to expose yourself for several hours in order to hack that server.
+
+The actual algorithm to calculate how long a bruteforce attack should take, however, is unknown. We'll make several different attempts during the BETA (and later!) to optimize the balance on this crucial hacking method.
+
+<del>I also think that players' level should influence this (but not so much as software versions). The whole topic of players level, however, must be discussed before.</del>
+
+---
+
+[1] - We could create an exploit that acts on CRC connections. The exploit could have the purpose of, say, returning a fake password. This could be an alternative way of actively defending against bruteforce attacks.
