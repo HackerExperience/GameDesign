@@ -34,3 +34,6 @@ Therefore, anyone with access to the server has access to all mounted/attached h
 
 In the future, there'll also be a performance penalty for players mounting hard drive over USB. We'll add USB2.0 and USB3.0 ports to the motherboard, and limit the transfer speed between two hard drives. For now, there is no difference on transfer speed.
 
+---
+
+[Original discussion (read-only)](https://dev.hackerexperience.com/T258)
