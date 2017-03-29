@@ -26,12 +26,16 @@
 - [[en:Map]]
   - [[en:map:Influence]]
   - [[en:map:heat-map|Heat map]]
+  - [[en:map:virtual-buildings|Virtual buildings]]
+  - [[en:map:virtual-citizens|Virtual Citizens]]
 - [[en:Clan]]
+  - [[en:clan:War]]
   - [[en:clan:police|Private Police]]
 - [[en:Missions]]
   - [[en:missions:PvE]]
   - [[en:missions:PvP]]
-- [[en:law-enforcement|Law Enforcement]]
+- [[en:police|Police / Law Enforcement]]
+  - [[en:police:publicvsprivate|Public vs Private police]]
 - [[en:Finance]]
   - [[en:finance:Currencies]]
   - [[en:finance:Banks]]
@@ -39,11 +43,11 @@
 
 # Strategies
 
-- [[en:strategy:Offense]]
-- [[en:strategy:Defense]]
-- [[en:strategy:Stealth]]
-- [[en:strategy:Lonewolf]]
-- [[en:strategy:Team-player|Team player]]
+- [[en:strategies:Offense]]
+- [[en:strategies:Defense]]
+- [[en:strategies:Stealth]]
+- [[en:strategies:Lonewolf]]
+- [[en:strategies:Team-player|Team player]]
 
 # Storyline
 
@@ -53,10 +57,23 @@
   - [[en:storyline:campaign:Single-player]]
   - [[en:storyline:campaign:Multiplayer]]
 
+# Universe
+
+- [[en:universe:Overview]]
+- [[en:universe:virtual-citizens|Virtual Citizens]]
+- [[en:universe:Persistence]]
+- [[en:universe:AI]]
+
+# Balance
+
+- [[en:balance:Overview]]
+
 # Other mechanics
 
+- [[en:Hats]]
 - [[en:Chat]]
 - [[en:Skills]]
+- [[en:Boosts]]
 - [[en:Badges]]
 - [[en:University]]
 
