@@ -1,0 +1,39 @@
+# Components
+
+All servers have the following components:
+
+- Motherboard
+- Processor(s) 
+- Memory
+- Storage drive(s)
+- Network card(s) (with independent downlink/uplink)
+
+We'll probably add more components, or features over these components, later. One example are GPUs (still to be discussed).
+
+Some servers might have different components. For example, Mobile servers have all the above, but at a much more limited range.
+
+### Motherboard & slots
+
+Motherboard is a special type of hardware component, in the sense that all other components (CPU, RAM, storage drives, NICs & eventually others)  are tied to a single motherboard. This enables players to reallocate their purchased hardware (so they can buy a more powerful component and attach it to the motherboard, or even buy a whole new motherboard and re-use his old components).
+
+Just like in real life, motherboards have a limited number of slots, each slot supporting a specific type of component. Implementation-wise, components are tied to a single slot, which belongs to a motherboard, which is tied to a server. Basic motherboards have a smaller number of slots. More expensive motherboards may support multiple processors, 4x memory sticks and more than one network interface, for example. In the future we can extend motherboards to support hardware-level RAID, (dual) GPUs etc.
+
+This detailed separation of components & motherboard allow us to implement a very flexible hardware system that resembles Uplink's gateways, but in a much more powerful way. 
+
+### Orphaned components
+
+Since both motherboard & other components can be reattached, it's possible that a component is unused. It doesn't belong to a slot (or, in the case of a motherboard, it is not tied to a server). We could allow the player to sell his older/unused hardware.
+
+### Internal vs External storage
+
+External storage is possible in the form of both hard drive and USB disk (the later is a wishlist feature, not planned soon). There is no difference between "internal" or "external" hard drives, i.e. a hard drive can work as both, it depends on the setup. If a hard drive is tied to a "SATA Slot" on the motherboard, it's considered internal. If we detach this hard drive, add it to an "External Hard Drive Case" and connect it to an "USB Slot" on the server (motherboard), then we now have an external hard drive.
+
+The difference between internal & external storage lies on how you can use it. A hard drive can be detached from any slot, which we say it's an "orphan component". The contents of this hard drive can NOT be accessed by anyone, including the owner of the component. We need to bring this component (hard drive) online, either by attaching it to a SATA port, or to a USB port. Then, we say this hard drive has been //mounted//, and is accessible through the server.
+
+Therefore, anyone with access to the server has access to all mounted/attached hardware. External storage is a matter of "unplugging" the hard drive. It's quite useful for backup of important files. Some work on balance may be needed to avoid abuse.
+
+In the future, there'll also be a performance penalty for players mounting hard drive over USB. We'll add USB2.0 and USB3.0 ports to the motherboard, and limit the transfer speed between two hard drives. For now, there is no difference on transfer speed.
+
+---
+
+[Original discussion (read-only)](https://dev.hackerexperience.com/T258)

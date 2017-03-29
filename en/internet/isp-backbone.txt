@@ -1,0 +1,35 @@
+# ISPs and Backbones
+
+While ISPs and Backbones won't make into the BETA version (and possibly not even the first Stable release), we must plan ahead for them, so the implementation can easily be extended to support these features.
+
+Suppose server A opens a p2p connection to server B. In the real life, servers won't find each other magically. They will follow a set of routes, guided by a number of protocols and algorithms. Let me use an image to explain how they would work within the game, and what interesting gameplay possibilities they will bring.
+
+FIXME image
+
+Don't panic. Follow my words first. Notice how the above image is split in three main areas: I, II and III. Each one of them represents a different scenario. In all scenarios, source server `S` is trying to connect to target server `T`.
+
+Let's start with example I. `S` is trying to connect to `T`. Notice that both `S` and `T` are within the same ISP area and under the same backbone. Both backbones and ISPs have "working areas", that is, all servers within that area will be routed to that ISP, or to that backbone. Now back to the image. The dotted line between `S` and `T` is how the connection is //displayed// within the game. However, under the hood, what is actually happening is that server `S` finds its nearest `ISP`, which will directly route `S` to `T`.
+
+On example II, we have a slightly more complicated scenario, where server `S` is under `ISP1` area, and server `T` is under a different `ISP2` area. In order for this connection find its route, `S` must route to its `ISP1`, which will route to `T`'s ISP, `ISP2`, which will finally route the connection to `T`.
+
+Notice how on both examples above we didn't needed to route through the backbone. That's because both `S` and `T` are under the same backbone.
+
+Now, on example III, we have server `S` under one backbone (`B1`), and `T` under another backbone (`B2`). In this case, `S` must first route to it's `ISP1`, `ISP1` will route to backbone `B1`, which will route to backbone `B2`, which will route to `ISP2`, which will finally route to `T`.
+
+### Isn't this too complex to the casual user?
+
+Remember that backbones and ISPs are working "under the hood". What all users see (by default) is a direct connection from `S` to `T`, without any of this extra complexity.
+
+### Ok, so why this again?
+
+Having support for this ISP and Backbone logistics brings some cool features that we can work within the game. All countries have at least one backbone, and countries with a large population of players will have more and more backbones as time passes.
+
+Think with me. What would happen if a group of hackers attacked heavily Brazil's only backbone? That's right, no one from Brazil would be able to connect to other countries, and vice-versa. Brazilian servers would be unreachable from the outside (and, from a Brazilian perspective, foreign servers would be unreachable). Local connections within Brazil could still happen, since they would rely only on the ISP. Same applies for an attack against an ISP. All servers within that ISP area would be unreachable for a while.
+
+Shutting down an ISP (or worse, a Backbone) is a major attack, and won't come without counter-attacks (both from in-game Police as well as players). It isn't easy, too. However, it might be used as an strategy by clans or powerful players.
+
+There's one more reason for ISPs and Backbones, but that's so far to the future, and so overly ambitious, that I won't share for now ;)
+
+---
+
+[Original discussion (read-only)](https://dev.hackerexperience.com/T259)
