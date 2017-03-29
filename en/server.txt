@@ -1,0 +1,47 @@
+Servers are computers/machines. They can belong to a player, clan or NPC. Logs, processes and software are always bound to a server. Do not confuse servers for services, like a Web Server. Possibly better name for this feature would be Machines or Computers... still, we are going with Servers.
+
+# Server types
+
+There are different types of servers. They specify special behaviors that that server may have.
+
+**Desktop server** - A Desktop server is the one owned by players playing through a real computer or videogame console. When they sign up to HE2 using a computer or console, they are asked to choose the location of their Desktop server. This location is fixed for the rest of the game, but we allow the user to change it once (or twice, max) in case he did something wrong. Therefore, the main characteristic of a Desktop server is its __immutable location__. (Personally I dislike the name "Desktop server", but I'm yet to find a better one)
+
+**Mobile server** - A Mobile server has the main characteristic of "walking around" the map, thus having a __mutable location__. Players can have one Mobile server at a time, and it is created when they sign up (or log in) using the mobile client app. Another characteristic of the Mobile server is its __temporary nature__. A Mobile server is "alive" through the duration of the mobile session gameplay. This is further discussed below.
+
+**Virtual server** - In the future (not before BETA), we'll also have Virtual Private Servers (__VPS__). This feature must still be discussed.
+
+**Terminal server** - Possibly not the best name, but Terminal servers are used to create __"points of access"__ to centralized services. The best example are banks: while a bank is a centralized services, we may have thousands of terminals of the same bank, each one capable of logging into all accounts of that bank. Similar to ATMs.
+
+**NPC server** - Servers that are __not controlled by a player__ (but they can be //owned// by a player). Banks, Police, Virtual Building's servers, Corporations etc. If we ever add player-owned Banks (a feature still to be discussed), then a player could //own// an NPC server.
+
+(Probably some more to come)
+
+# Components
+
+Servers have components (the hardware they are made of). See [[en:server:components|wiki page about components]].
+
+# Multiple Servers 
+
+Unlike HE1, players can own multiple //independent// servers. This is a big step ahead, and brings a lot of gameplay possibilities.
+
+Independent servers mean each one have their own logs, processes, software, connections and anything that is bound to a server. We expect players with multiple servers to switch between them on a frequent basis, thus both the UI and the gameplay must support quick "context switches".
+In order to support that, we have what we call a //Gateway//. Gateway is the server being used by the player at that exact time. Only one server can be active by the player at any given time. On the Desktop client, a simple dropdown allows a one-click change of Gateway. On mobile app, swiping up on (most) screens brings the Gateway switch screen, which allows for a one-tap change.
+
+A challenge arises: how to group these servers? which location are they tied to? how about LANs?
+
+(My opinion on this: when I buy a server (from whom? in-game "Amazon"?) I'm able to choose a physical location to it (unless I bought a VPS). If I select the same location as my current server, a LAN will be created, with both servers having the same physical spot. Arbitrarily allowing players to choose their server location could have disadvantages, maybe they could game the system somehow by placing them on a too crowded (or too far) area. But maybe that's actually good?)
+
+# Temporary servers
+
+Before, let me go off-topic a bit and talk about the mobile client. We know many people will use both their computers and smartphones to play the game, taking full advantage of both clients. However, many people won't have access to, or use with frequency, either. In that case, we want both mobile and desktop clients to be "standalone", i.e. the player must not be required to use both clients in order to have access to all game features.
+Sure, some game features might be impractical on some clients, but at least the basic and common features must be available on both. If a feature is presented only on one client, it should not affect (or at least impair) the other client's players.
+
+Mobile servers are said to be "temporary". Here's the rationale behind it, and what it solves. We are open to suggestions.
+
+When players are online on the mobile client (up until a few hours after they close the app), their mobile server can be discovered by Anymap, i.e. they can be hacked by nearby people. However, if someone has the IP address of the mobile server, they can hack it anytime, regardless of the victim's activity.
+
+This solves the "yet another server to protect" problem. If you logged your server IP somewhere, you are responsible for it. If you don't play with mobile app often, you won't have to bother protecting it from nearby people. I think this is a balanced approach that won't give any sides (mobile vs desktop) major (dis)advantages.
+
+---
+
+[Original discussion (read-only)](https://dev.hackerexperience.com/T258)
