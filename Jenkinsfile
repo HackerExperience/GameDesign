@@ -13,5 +13,12 @@ node('!master') {
       }
     }
     milestone()
+  } else if (env.BRANCH_NAME == 'preview') {
+    lock(resource: 'wiki-gdpreview-deployment', inversePrecedence: true) {
+      stage('Deploy preview') {
+        sh "ssh deployer deploy wiki prod --wiki-name gdpreview"
+      }
+    }
+    milestone()
   }
 }
