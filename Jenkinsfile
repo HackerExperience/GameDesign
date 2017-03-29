@@ -9,7 +9,7 @@ node('!master') {
   if (env.BRANCH_NAME == 'master'){
     lock(resource: 'wiki-gd-deployment', inversePrecedence: true) {
       stage('Deploy') {
-        sh "ssh deployer deploy wiki prod"
+        sh "ssh deployer deploy wiki prod --wiki-name gd"
       }
     }
     milestone()
