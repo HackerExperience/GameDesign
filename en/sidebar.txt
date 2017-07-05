@@ -32,8 +32,6 @@
   - [[en:clan:War]]
   - [[en:clan:police|Private Police]]
 - [[en:Missions]]
-  - [[en:missions:PvE]]
-  - [[en:missions:PvP]]
 - [[en:police|Police / Law Enforcement]]
   - [[en:police:publicvsprivate|Public vs Private police]]
 - [[en:Finance]]
