@@ -1,0 +1,151 @@
+# Mission modes
+
+## PvE
+
+PvE missions use Player's real IP. It includes Trace, Heat and Police as usual. Bounces can be used.
+
+Trace should be shaped: more aggressive on mission targets, and non-existent when interacting with mission source (e.g. steal).
+
+### Delete
+
+1 team (Player). 1 generated server.
+
+Player must delete a file at the given server.
+
+### Steal
+
+1 team (Player). 2 generated servers.
+
+Player must download a file from a server and upload it to another.
+
+### Destroy
+
+1 team (Player). 1 generated server.
+
+Player must DDoS a server until it's taken out of service.
+
+## PvP
+
+Missions are controlled environments in which Player's IP address is hidden/protected.
+
+In order to do so, members of the mission get a temporary IP address on their gateway for the duration of the mission. Attacking unrelated servers will leak player's real IP.
+
+Bounces can't be used (for now at least). There's no Trace, Heat or Police.
+
+Players not participating in the mission do not have access to mission-related servers (including Players).
+
+For all, or most modes, there's a "Preparation" time before IPs are made public. During this time, players can prepare themselves and elaborate a strategy.
+
+### Hostage
+
+2 teams; 1 server for each team. max 10 players
+
+Team Counter must recover a big file from Terrors's servers, while team Terror must protect this file.
+
+Once recovered, team Counter must upload the file to its servers, and Terror should stop it.
+
+File can't be deleted. Can be hidden/encrypted.
+
+Team IPs are public.
+
+### Bomb
+
+2 teams; 2 servers for each team. max 10 players
+
+Team Terror must access its servers, download the Bomb file, attack Counter's servers and upload the bomb.
+
+Team Counter must protect its servers, or attack Terror and delete Bomb file.
+
+Bomb file can be deleted. If all copies are deleted, Counter wins. Members of Terror can have a copy of Bomb, which is equally valid.
+
+Team IPs are public.
+
+### Last Man Standing
+
+N teams; no team servers. Max 10 players
+
+Each Player is a team. Each Player receives a file, which they must hold on to. If the file is deleted, Player "dies". Last player to survive wins.
+
+Yet to be solved: ways to stop camping, ensure players attack each other.
+
+Members' IP are public.
+
+### Team Deathmatch
+
+2 teams; no team servers. Max 10 players.
+
+Players must kill members of other teams, and protect themselves. Killing happens by uploading a file to someone else, and having that file live remotely for a period of time.
+
+No friendly fire. Respawn can be an optional feature.
+
+Members' IP are public.
+
+### Capture the Flag
+
+2 teams; 1 server for each team. Max 10 players.
+
+Each team server holds a Flag file. Teams must 1) protect their flag and 2) steal other team's flag.
+
+Protection happens in several layers: stopping remote attacks, encrypting and hiding flag, counter-attacking to cancel uploads/downloads, etc.
+
+Flag must not be deleted. It can't be downloaded by own members, nor have copies created.
+
+Team IPs are public.
+
+### Hunted (Wanted List)
+
+N teams (Player). REAL IP.
+
+Hunter may select a player from the Wanted List to trace down, receiving a bounty. Several players may try to hunt the same Wanted at the same time, hence multiple teams may be formed.
+
+IP of Hunters is not shared. Hunters have access to last known locations from the Wanted, when the original trace happened.
+
+Hunter must follow the bounce logs until he believes he has reached the Wanted player, in which case he notifies the police. If that's indeed the Wanted player, mission ends and he receives the bounty.
+
+Improvement: in case of multiple Hunters, detect which of them first logged on each bounced hop, and have the reward split according to "numbers of hop discovered". This eliminates the possibility of someone getting (n-1) hops so someone else comes and claims the last hop (gateway).
+
+Last Known Addresses are public to members of the mission only. Extreme heat and trace should be applied if Hunters behave in unexpected ways within these addresses (even after the mission has ended).
+
+### 
+
+## CvC (Clan vs Clan)
+
+### Conquest
+
+2 clans; REAL IPs. Unlimited members.
+
+3 or 5 NPCs are generated. During Preparation time, Defending Clan has access to them and can set up a defense/strategy.
+
+Once Prep. time is out, Attacking Clan has a limited time to attack & conquer majority of NPCs.
+
+Conquering an NPC is done by uploading and installing 3 different files (which all members have access). Clan who owns at least 2 of these 3 files have control over the NPC.
+
+Once Mission time is up, clan with majority of NPCs wins, having the dispute territory rewarded to him. 
+
+### Clan Deathmatch
+
+Identical to Team Deathmatch, except that exclusive to clan members. Fake IP. Unlimited members. Potentially uneven teams.
+
+This mission is created when one of the clan requests to fight against another one.
+
+### Clan Raid
+
+Clan Raid is a specific type of attack targeted against a Clan's bank, where one Clan (if successful) can steal other clan's money.
+
+It's not a mission. Members aren't notified that their clan will be attacked.
+
+## CvE
+
+### Expansion
+
+1 to N teams; REAL IPs. Potentially CvC
+
+Similar to Conquest, but Clan is expanding to a territory that has no owner. In that case, 2 to 5 NPCs are generated and clan must attack those servers, same as Conquest.
+
+After conquered, those NPCs (all of them) must remain conquered until the end of the mission.
+
+However, this mission is public (everyone can see), and of special interest to the Resistance or nearby clans. As such, other players can join the mission as it is happening, raid the NPCs and prevent the expansion.
+
+Expansion may not only be prevented but actually "stolen". If another group "counter-attacks" the original expansion, and manages to conquer all NPCs at the end of the mission, then it will attach the disputed territory to itself.
+
+More than one group may join the expansion mission after it has started.
